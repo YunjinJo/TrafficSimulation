@@ -23,8 +23,8 @@ YOLOv5를 이용한 사물 감지는 https://lab.hanium.or.kr/22_HF345/22_hf345 
 <summary>신호등 동작</summary>
 <div markdown="1">
 
-<img src = "https://lab.hanium.or.kr/22_HF345/trafficsimulation/raw/master/README_files/plan1_1.png" width="45%">   
-<img src = "https://lab.hanium.or.kr/22_HF345/trafficsimulation/raw/master/README_files/plan1_2.png" width="45%">   
+<img src = "https://github.com/YunjinJo/TrafficSimulation/blob/master/README_files/plan1_1.png?raw=true" width="45%">   
+<img src = "https://github.com/YunjinJo/TrafficSimulation/blob/master/README_files/plan1_2.png?raw=true" width="45%">   
 
 정해진 시간에 따라 신호등의 신호가 자동으로 변경되는 것을 확인
 </div>
@@ -37,7 +37,7 @@ YOLOv5를 이용한 사물 감지는 https://lab.hanium.or.kr/22_HF345/22_hf345 
 <summary>신호등 동작</summary>
 <div>
 
-<img src = "https://lab.hanium.or.kr/22_HF345/trafficsimulation/raw/master/README_files/Plan2_gif.gif">
+<img src = "https://github.com/YunjinJo/TrafficSimulation/blob/master/README_files/Plan2_gif.gif?raw=true">
 
 <a href="https://www.youtube.com/watch?v=37I2fnLaaOU">유튜브 링크</a>
 
