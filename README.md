@@ -19,14 +19,32 @@ YOLOv5를 이용한 사물 감지는 https://lab.hanium.or.kr/22_HF345/22_hf345 
 
 ## 2. 구현 목표
 ### 1. 신호등 동작 ✅
-<img src = "https://lab.hanium.or.kr/22_HF345/trafficsimulation/raw/master/README_files/plan1_1.png" width="45%">
-<img src = "https://lab.hanium.or.kr/22_HF345/trafficsimulation/raw/master/README_files/plan1_2.png" width="45%">
+<details>
+<summary>신호등 동작</summary>
+<div markdown="1">
+
+<img src = "https://lab.hanium.or.kr/22_HF345/trafficsimulation/raw/master/README_files/plan1_1.png" width="45%">   
+<img src = "https://lab.hanium.or.kr/22_HF345/trafficsimulation/raw/master/README_files/plan1_2.png" width="45%">   
 
 정해진 시간에 따라 신호등의 신호가 자동으로 변경되는 것을 확인
+</div>
+</details>
+
+
 
 ### 2. 신호등 신호에 맞추어 차량 이동 ✅  
-[![Video Label](http://img.youtube.com/vi/37I2fnLaaOU/0.jpg)](https://www.youtube.com/watch?v=37I2fnLaaOU)  
+<details>
+<summary>신호등 동작</summary>
+<div>
+
+<img src = "https://lab.hanium.or.kr/22_HF345/trafficsimulation/raw/master/README_files/Plan2_gif.gif">
+
+<a href="https://www.youtube.com/watch?v=37I2fnLaaOU">유튜브 링크</a>
+
+↑클릭시 유튜브로 이동
 신호등의 신호에 따라 차량이 멈추고, 움직이는 것을 확인
+</div>
+</details>
 
 ### 3. 2차로보다 더 큰 도로 만들기 
 Working on it...
