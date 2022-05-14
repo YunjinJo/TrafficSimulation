@@ -48,3 +48,9 @@ YOLOv5를 이용한 사물 감지는 https://lab.hanium.or.kr/22_HF345/22_hf345 
 
 ### 3. 2차로보다 더 큰 도로 만들기 
 Working on it...
+
+
+## 3. 참고 자료
+Simple City Builder: https://www.youtube.com/playlist?list=PLcRSafycjWFd6YOvRE3GQqURFpIxZpErI
+Adding people to city builder: https://www.youtube.com/watch?v=MpGfSbMikeQ&list=PLcRSafycjWFe50Nz4OBZC-5dYBKf3581v
+Traffic system in Unity 2020: https://www.youtube.com/watch?v=mu7f3Z1lRsE&list=PLcRSafycjWFdDou6OTCmGbRZ9lwLXjuMO
