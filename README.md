@@ -11,7 +11,7 @@ YOLOv5를 이용한 사물 감지는 https://lab.hanium.or.kr/22_HF345/22_hf345 
 <img src="https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=Unity&logoColor=white">
 
 ## 1. 설명
-![UnityProject](https://lab.hanium.or.kr/22_HF345/trafficsimulation/raw/master/README_files/UnityProject.png)
+![UnityProject](https://github.com/YunjinJo/TrafficSimulation/blob/master/README_files/UnityProject.png?raw=true)
 1. 차량이 도로를 따라 움직이는 AI를 구현합니다.
 2. 실제 도로에서 사용되고 있는 신호등의 신호 체계를 구현합니다.
 3. 라즈베리파이, YOLOv5를 이용해 만든 최적의 신호등 알고리즘을 유니티에서 구현합니다.
