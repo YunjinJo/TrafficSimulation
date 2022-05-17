@@ -6,7 +6,11 @@ AI를 이용한 신호등 제어 시스템을 만드는 프로젝트입니다.
 이 레포지토리는 유니티를 이용해 차량과 행인들이 돌아다니는 가상 환경을 만들고, 시뮬레이션 하기 위한 파일들이 저장되어 있습니다.  
 YOLOv5를 이용한 사물 감지는 https://github.com/YunjinJo/yolov5_car_count 해당 레포지토리를 참고해주세요.
 
-- 사용 기술 스택  
+- 프로젝트 구성
+  - 프로젝트 주최: 한이음 2022
+  - 진행 기간: 2022.04.15 ~ 2022.11.30
+  - 참여자: 한국공학대학교-조윤진, 한국공학대학교-최영재, 한국공학대학교-김민상
+  - 사용 기술 스택  
 <img src="https://img.shields.io/badge/C Sharp-239120?style=for-the-badge&logo=C Sharp&logoColor=white">  
 <img src="https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=Unity&logoColor=white">
 
@@ -41,16 +45,39 @@ YOLOv5를 이용한 사물 감지는 https://github.com/YunjinJo/yolov5_car_coun
 
 <a href="https://www.youtube.com/watch?v=37I2fnLaaOU">유튜브 링크</a>
 
-↑클릭시 유튜브로 이동
+↑클릭시 유튜브로 이동  
 신호등의 신호에 따라 차량이 멈추고, 움직이는 것을 확인
 </div>
 </details>
 
 ### 3. 2차로보다 더 큰 도로 만들기 
-Working on it...
+1. 도로 모델링 구하기  
+2. Unity에서 marker, script설정  
+3. 차량 동작 확인  
 
 
-## 3. 참고 자료
+### 4. 보행자 구현
+1. 보행자 모델링 구하기
+2. 보행자 AI 구현
+3. 보행자 신호등 구현
+4. 보행자 횡단보도 구현
+5. 보행자와 차량간 AI 연동
+
+### 5. 실제 지도 데이터 구현
+1. 한국공학대학교 주변 도로 및 건물 구현
+2. 보행자와 차량 자동 생성 및 이동 확인
+
+### 6. 시뮬레이션 기능 추가
+1. 특정 지역의 차량 대수, 차량 통행량 등 정보 시각화
+
+
+## 3. 프로젝트 설치 방법
+Releases에서 자신의 OS에 맞는 파일을 다운로드 후 실행시켜주세요.
+
+## 4. 버전
+- v0.2: 차량 AI, 신호등 동작 확인
+
+## 5. 참고 자료
 Simple City Builder: https://www.youtube.com/playlist?list=PLcRSafycjWFd6YOvRE3GQqURFpIxZpErI   
 Adding people to city builder: https://www.youtube.com/watch?v=MpGfSbMikeQ&list=PLcRSafycjWFe50Nz4OBZC-5dYBKf3581v   
 Traffic system in Unity 2020: https://www.youtube.com/watch?v=mu7f3Z1lRsE&list=PLcRSafycjWFdDou6OTCmGbRZ9lwLXjuMO   
