@@ -44,8 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc0ba44aac3b484b8a0a4d8cbad8d5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacentMarkers:
-  - {fileID: 6979696912822960345}
+  adjacentMarkers: []
   openForConnections: 1
 --- !u!1 &317371906192400315
 GameObject:
@@ -224,9 +223,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers:
   - {fileID: 1547229366170371422}
-  - {fileID: 1698444711980087717}
-  - {fileID: 5622062994906779639}
-  - {fileID: 6979696912822960345}
   openForConnections: 0
 --- !u!1 &1614673893037386348
 GameObject:
@@ -1015,8 +1011,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc0ba44aac3b484b8a0a4d8cbad8d5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacentMarkers:
-  - {fileID: 745011945112707094}
+  adjacentMarkers: []
   openForConnections: 1
 --- !u!1 &3515965438237719017
 GameObject:
@@ -1062,8 +1057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc0ba44aac3b484b8a0a4d8cbad8d5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacentMarkers:
-  - {fileID: 6122069206765831240}
+  adjacentMarkers: []
   openForConnections: 1
 --- !u!1 &3726803428152585494
 GameObject:
@@ -1110,7 +1104,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   adjacentMarkers:
-  - {fileID: 3810113384999970596}
   - {fileID: 745011945112707094}
   - {fileID: 6979696912822960345}
   openForConnections: 0
@@ -1160,7 +1153,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers:
   - {fileID: 6122069206765831240}
-  - {fileID: 745011945112707094}
   openForConnections: 0
 --- !u!1 &4670658565367010711
 GameObject:
@@ -1462,8 +1454,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   adjacentMarkers:
-  - {fileID: 6122069206765831240}
-  - {fileID: 844963297981412184}
   - {fileID: 1914715121427716573}
   openForConnections: 0
 --- !u!1 &6192166138095513453
@@ -1642,10 +1632,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   adjacentMarkers:
-  - {fileID: 844963297981412184}
   - {fileID: 1698444711980087717}
   - {fileID: 5294581625559448516}
-  - {fileID: 394718298270981306}
   openForConnections: 0
 --- !u!1 &8022487965016219334
 GameObject:
