@@ -27696,7 +27696,7 @@ MonoBehaviour:
   roadStraight: {fileID: 5661862354351878554, guid: 0cf01c743836d154eb47042e1bc62afd,
     type: 3}
   corner: {fileID: 7077802812573144028, guid: fd4c97eb7b86f1149a7745204ed8904e, type: 3}
-  threeWay: {fileID: 2384947387477557946, guid: b06bf87184e0d41a8ac002ea9e443280,
+  threeWay: {fileID: 2384947387477557946, guid: 4c7ad7ee04cf2447f959fa3982773158,
     type: 3}
   fourWay: {fileID: 3351635067702010651, guid: f4402828bce58b54791119f89fa2df61, type: 3}
 --- !u!1001 &2103146636
