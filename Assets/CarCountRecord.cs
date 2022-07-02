@@ -15,6 +15,8 @@ public class CarCountRecord : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI textMeshPro;
 
+    public SaveCSV saveCsv;
+
     public string texts;
     // Start is called before the first frame update
     void Start()
@@ -35,5 +37,10 @@ public class CarCountRecord : MonoBehaviour
             textMeshPro.text = "1Minute: " + texts;
             i++;
         }
+    }
+
+    public void SaveData()
+    {
+        saveCsv.WriteData(carCountList);
     }
 }

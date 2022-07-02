@@ -8,10 +8,7 @@ using UnityEngine;
 
 public class SaveCSV : MonoBehaviour
 {
-    private void Start()
-    {
-        CreateXml();
-    }
+    
 
     public void CreateXml()
     {
@@ -40,6 +37,33 @@ public class SaveCSV : MonoBehaviour
         exp.InnerText = "45";
         child.AppendChild(exp);
         
-        xmlDoc.Save("./Assets/Resources/Character.xml");
+        xmlDoc.Save("./Assets/StreamingAssets/Character.xml");
     }
+    
+ 
+    public void WriteData(List<int> strData)
+    {
+        // FileMode.Create는 덮어쓰기.
+        FileStream f = new FileStream(Application.dataPath + "/StreamingAssets" + "/" + "result.csv", FileMode.Create, FileAccess.Write);
+ 
+        StreamWriter writer = new StreamWriter(f, System.Text.Encoding.Unicode);
+        writer.WriteLine("Time, CarCount");
+        var temp = 1;
+        foreach (var i in strData)
+        {
+            writer.WriteLine(60*temp + "," + i);
+            Debug.Log("Data Saved" + i);
+            temp++;
+        }
+        //writer.WriteLine(strData);
+        writer.Close();
+    }
+ 
+    
+    // public void ReadData()
+    // {
+    //     StreamReader sr = new StreamReader(Application.dataPath + "/StreamingAssets" + "/" + "text.txt");
+    //     source = sr.ReadLine();
+    //     sr.Close();
+    // }
 }
