@@ -21,4 +21,6 @@ public class Timer : MonoBehaviour
         textMeshPro.text = "Timer: " + countTriggerManager.timerCount;
 
     }
+    
+    
 }

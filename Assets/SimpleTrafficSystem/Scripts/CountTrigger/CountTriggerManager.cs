@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -18,13 +19,9 @@ public class CountTriggerManager : MonoBehaviour
         deltaTime = Time.deltaTime;
     }
 
-    
-
-    // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
         timerCount += deltaTime;
-        
     }
 
     public void CountingCars()
