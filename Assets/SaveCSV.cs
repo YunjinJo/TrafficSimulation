@@ -47,7 +47,7 @@ public class SaveCSV : MonoBehaviour
         FileStream f = new FileStream(Application.dataPath + "/StreamingAssets" + "/" + "result.csv", FileMode.Create, FileAccess.Write);
  
         StreamWriter writer = new StreamWriter(f, System.Text.Encoding.Unicode);
-        writer.WriteLine("Time, CarCount");
+        writer.WriteLine("Time,CarCount");
         var temp = 1;
         foreach (var i in strData)
         {
