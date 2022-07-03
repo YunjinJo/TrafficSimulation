@@ -28,7 +28,7 @@ public class CarCountRecord : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Math.Abs(countTriggerManager.timerCount - (20f * (i+1))) < 0.1)
+        if (Math.Abs(countTriggerManager.timerCount - (60f * (i+1))) < 0.1)
         {
             carCountList.Add(countTriggerManager.carCount);
             texts += (carCountList[i] + ", ");
