@@ -4,6 +4,16 @@ using UnityEngine;
 
 public class YOLO : MonoBehaviour
 {
+
+    public int Car;
+
+    public int Bus;
+
+    public int Truck;
+
+    public int Firetruck;
+
+    public int Ambulance;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +24,13 @@ public class YOLO : MonoBehaviour
     void Update()
     {
         
+    }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Car"))
+        {
+            
+        }
     }
 }
