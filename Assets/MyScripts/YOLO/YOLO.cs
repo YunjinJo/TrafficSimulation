@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class YOLO : MonoBehaviour
@@ -14,6 +16,8 @@ public class YOLO : MonoBehaviour
     public int Firetruck;
 
     public int Ambulance;
+
+    public List<GameObject> detectedCars = new List<GameObject>();
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +34,12 @@ public class YOLO : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Car"))
         {
-            
+            detectedCars.Add(other.GameObject());
         }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        detectedCars.Remove(other.GameObject());
     }
 }
