@@ -146,6 +146,12 @@
       },
       "url": "https://packages.unity.com"
     },
+    "wizardscode.character": {
+      "version": "file:C:/Users/black/Downloads/Character-Unity-Package-main",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
