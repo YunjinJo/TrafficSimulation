@@ -1,7 +1,4 @@
-﻿using TMPro;
-using UnityEngine.UI;
-
-namespace TurnTheGameOn.SimpleTrafficSystem
+﻿namespace TurnTheGameOn.SimpleTrafficSystem
 {
     using UnityEngine;
 
@@ -10,7 +7,6 @@ namespace TurnTheGameOn.SimpleTrafficSystem
     {
         [Tooltip("Green light duration.")]
         public float greenTimer;
-        
         [Tooltip("Yellow light duration.")]
         public float yellowTimer;
         [Tooltip("Red light duration.")]

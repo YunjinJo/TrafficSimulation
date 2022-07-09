@@ -15,18 +15,21 @@ public class ShowInputfield : MonoBehaviour
     [SerializeField] private TMP_InputField yellowInputField;
     [SerializeField] private TMP_InputField redInputField;
     [SerializeField] private AITrafficLightManager trafficLightManager;
+    public int select;
 
     private void Start()
     {
         ControlGameobjects(false);
+        select = 0;
     }
 
     public void DropdownMenuSelected(TMP_Dropdown selectedDropdown)
     {
+        select = selectedDropdown.value;
         if (selectedDropdown.value != 0)
         {
             ControlGameobjects(true); // 드롭다운 메뉴 선택시 텍스트, inputfield 보임
-            SetInpufieldText();
+            SetInpufieldText(selectedDropdown.value - 1);
         }
         else
         {
@@ -34,6 +37,16 @@ public class ShowInputfield : MonoBehaviour
         }
         
         
+    }
+
+    public void EditTrafficLightTimer(TMP_InputField textInput)
+    {
+        if (textInput.text != null && textInput.name == "Green")
+            trafficLightManager.trafficLightCycles[@select].greenTimer = float.Parse(textInput.text);
+        else if (textInput.text != null && textInput.name == "Yellow")
+            trafficLightManager.trafficLightCycles[@select].yellowTimer = float.Parse(textInput.text);
+        else if (textInput.text != null && textInput.name == "Red")
+            trafficLightManager.trafficLightCycles[@select].redtimer = float.Parse(textInput.text);
     }
 
     private void ControlGameobjects(bool status)
@@ -47,10 +60,10 @@ public class ShowInputfield : MonoBehaviour
         redInputField.gameObject.SetActive(status);
     }
 
-    private void SetInpufieldText()
+    private void SetInpufieldText(int selectedDropdown)
     {
-        greenInputField.text = trafficLightManager.trafficLightCycles[trafficLightManager.selectedTrafficLight].greenTimer.ToString();
-        yellowInputField.text = trafficLightManager.trafficLightCycles[trafficLightManager.selectedTrafficLight].yellowTimer.ToString();
-        redInputField.text = trafficLightManager.trafficLightCycles[trafficLightManager.selectedTrafficLight].redtimer.ToString();
+        greenInputField.text = trafficLightManager.trafficLightCycles[selectedDropdown].greenTimer.ToString();
+        yellowInputField.text = trafficLightManager.trafficLightCycles[selectedDropdown].yellowTimer.ToString();
+        redInputField.text = trafficLightManager.trafficLightCycles[selectedDropdown].redtimer.ToString();
     }
 }

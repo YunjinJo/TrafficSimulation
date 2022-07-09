@@ -1,6 +1,4 @@
-﻿using TMPro;
-
-namespace TurnTheGameOn.SimpleTrafficSystem
+﻿namespace TurnTheGameOn.SimpleTrafficSystem
 {
     using UnityEngine;
 
@@ -9,8 +7,6 @@ namespace TurnTheGameOn.SimpleTrafficSystem
     {
         [Tooltip("Array of AITrafficLightCycles played as a looped sequence.")]
         public AITrafficLightCycle[] trafficLightCycles;
-
-        public int selectedTrafficLight;
         private float timer;
         private enum CycleState { Green, Red, Yellow, Complete }
         private CycleState lightState;
@@ -37,51 +33,6 @@ namespace TurnTheGameOn.SimpleTrafficSystem
                 Debug.LogWarning("There are no lights assigned to this TrafficLightManger, it will be disabled.");
                 enabled = false;
             }
-        }
-
-        public void SelectTrafficLight(TMP_Dropdown selectedDropdown)
-        {
-            if (selectedDropdown.value == 1)
-            {
-                selectedTrafficLight = 0;
-                
-            }
-            else if(selectedDropdown.value == 2)
-            {
-                selectedTrafficLight = 1;
-            }
-            else if (selectedDropdown.value == 3)
-            {
-                selectedTrafficLight = 2;
-            }
-            else
-            {
-                selectedTrafficLight = -1;
-            }
-        }
-        
-        public void SetupSignalTime(TMP_InputField input)
-        {
-            if (input.gameObject.name == "Green")
-            {
-                trafficLightCycles[selectedTrafficLight].greenTimer = int.Parse(input.text);
-                Debug.Log("Change Green Timer: " + input.text);
-            }
-            else if (input.gameObject.name == "Yellow")
-            {
-                trafficLightCycles[selectedTrafficLight].yellowTimer = int.Parse(input.text);
-                Debug.Log("Change Yellow Timer: " + input.text);
-            }
-            else if (input.gameObject.name == "Red")
-            {
-                trafficLightCycles[selectedTrafficLight].redtimer = int.Parse(input.text);
-                Debug.Log("Change Red Timer: " + input.text);
-            }
-            else
-            {
-                Debug.Log("Nothing Changed");
-            }
-            
         }
 
         private void FixedUpdate()
