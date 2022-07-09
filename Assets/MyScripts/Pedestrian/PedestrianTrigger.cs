@@ -20,7 +20,7 @@ public class PedestrianTrigger : MonoBehaviour
     void Update()
     {
         if ((trafficLightManager.cycleIndex == 0 &&
-             trafficLightManager.lightState == AITrafficLightManager.CycleState.Red) || trafficLightManager.cycleIndex != 0)
+             trafficLightManager.lightState == AITrafficLightManager.CycleState.Red) || trafficLightManager.cycleIndex != 0 && pedestrianList.Count > 0)
         {
             for (int i = 0; i < pedestrianList.Count; i++)
             {
@@ -42,7 +42,8 @@ public class PedestrianTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        pedestrianList.Add(other.GetComponent<PedestrianAI>());
+        if(other.CompareTag("Pedestrian"))
+            pedestrianList.Add(other.GetComponent<PedestrianAI>());
     }
 
 }

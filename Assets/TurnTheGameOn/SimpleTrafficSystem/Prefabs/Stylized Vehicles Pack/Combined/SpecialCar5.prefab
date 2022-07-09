@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 2962572977395925636}
   m_Layer: 30
   m_Name: SpecialCar5
-  m_TagString: Car
+  m_TagString: Special_Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

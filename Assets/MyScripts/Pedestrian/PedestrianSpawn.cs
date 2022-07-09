@@ -33,19 +33,19 @@ public class PedestrianSpawn : MonoBehaviour
     void Start()
     {
 
-        maxPedestrian = 20;
+        maxPedestrian = 100;
         currentPedestrian = 0;
         i = 0;
         spawnPointIndex = 0;
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         _timer = timer.timerCount;
         if (currentPedestrian != maxPedestrian && Math.Abs(_timer - (5f * (i + 1))) < 0.1)
         {
-            spawnPointIndex = Random.Range(0, 2);
+            spawnPointIndex = Random.Range(0, 4);
             SpawnPedestrian(spawnPointIndex);
             currentPedestrian++;
             i++;
