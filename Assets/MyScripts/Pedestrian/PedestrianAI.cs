@@ -19,7 +19,7 @@ public class PedestrianAI : MonoBehaviour
 
     [SerializeField] public PedestrianSpawn spawn;
 
-    public AITrafficLightManager trafficLight;
+    //public AITrafficLightManager trafficLight;
 
     private Animator anim;
 

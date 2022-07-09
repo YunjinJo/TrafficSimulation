@@ -9,7 +9,7 @@ public class CollisionDetector : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Car"))
+        if (other.gameObject.CompareTag("Car") || other.gameObject.CompareTag("Special_Car"))
         {
             countTriggerManager.CountingCars();
         }

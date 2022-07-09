@@ -25,7 +25,7 @@ public class ShowInputfield : MonoBehaviour
 
     public void DropdownMenuSelected(TMP_Dropdown selectedDropdown)
     {
-        select = selectedDropdown.value;
+        select = selectedDropdown.value + 1;
         if (selectedDropdown.value != 0)
         {
             ControlGameobjects(true); // 드롭다운 메뉴 선택시 텍스트, inputfield 보임

@@ -29,6 +29,7 @@ public class PedestrianSpawn : MonoBehaviour
     public int spawnPointIndex;
     public AITrafficLightManager trafficLightManager;
     
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -67,7 +68,7 @@ public class PedestrianSpawn : MonoBehaviour
         spawned.Add(person);
         var person_scrpit = person.GetComponent<PedestrianAI>();
         person_scrpit.spawn = this;
-        person_scrpit.trafficLight = trafficLightManager;
+        //person_scrpit.trafficLight = trafficLightManager;
         for (int i = 0; i < waypointsList[index].transform.childCount; i++)
         {
             person_scrpit.waypoints[i] = waypointsList[index].transform.GetChild(i).transform;
