@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2650987688484677532}
   m_Layer: 30
   m_Name: MicroBus5
-  m_TagString: Player
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,6 +31,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1739245817225207752}
   - {fileID: 1739245817455675845}
@@ -169,6 +170,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.75, z: 2.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1739245816842182706}
   m_RootOrder: 3
@@ -181,8 +183,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1739245816909349998}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 0
+  m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.75
   m_Range: 40
@@ -231,6 +234,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1 &1739245817225207753
@@ -259,6 +263,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 3.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1739245816842182706}
   m_RootOrder: 0
@@ -289,6 +294,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0.9, y: 1, z: 2.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1739245816842182706}
   m_RootOrder: 1
@@ -319,6 +325,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0.9, y: 1, z: 2.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1739245816842182706}
   m_RootOrder: 2
@@ -350,6 +357,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: 1.6940659e-21, w: 1}
   m_LocalPosition: {x: -1.3422505, y: 0.60400003, z: -2.2109978}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1739245816842182706}
   m_RootOrder: 7
@@ -411,6 +419,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: 1.6940659e-21, w: 1}
   m_LocalPosition: {x: -1.3422505, y: 0.60400003, z: 2.093105}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1739245816842182706}
   m_RootOrder: 5
@@ -472,6 +481,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: 1.6940659e-21, w: 1}
   m_LocalPosition: {x: 1.34225, y: 0.60400003, z: 2.093105}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1739245816842182706}
   m_RootOrder: 4
@@ -533,6 +543,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: 1.6940659e-21, w: 1}
   m_LocalPosition: {x: 1.34225, y: 0.60400003, z: -2.2109978}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1739245816842182706}
   m_RootOrder: 6
@@ -574,10 +585,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1739245816842182706}
     m_Modifications:
-    - target: {fileID: 8038261308700661135, guid: b13f341511af56443beddd8cdebc8104,
+    - target: {fileID: 8038261308700297647, guid: b13f341511af56443beddd8cdebc8104,
         type: 3}
-      propertyPath: m_Name
-      value: MicroBus5_combined
+      propertyPath: m_RootOrder
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8038261308700297647, guid: b13f341511af56443beddd8cdebc8104,
         type: 3}
@@ -596,6 +607,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8038261308700297647, guid: b13f341511af56443beddd8cdebc8104,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8038261308700297647, guid: b13f341511af56443beddd8cdebc8104,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -608,16 +624,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8038261308700297647, guid: b13f341511af56443beddd8cdebc8104,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8038261308700297647, guid: b13f341511af56443beddd8cdebc8104,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8038261308700297647, guid: b13f341511af56443beddd8cdebc8104,
         type: 3}
@@ -634,17 +640,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8038261308700661135, guid: b13f341511af56443beddd8cdebc8104,
+        type: 3}
+      propertyPath: m_Name
+      value: MicroBus5_combined
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b13f341511af56443beddd8cdebc8104, type: 3}
 --- !u!4 &8679641506438797792 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8038261308700297647, guid: b13f341511af56443beddd8cdebc8104,
-    type: 3}
-  m_PrefabInstance: {fileID: 1727662504724418639}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &8679641506438797802 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8038261308700297637, guid: b13f341511af56443beddd8cdebc8104,
     type: 3}
   m_PrefabInstance: {fileID: 1727662504724418639}
   m_PrefabAsset: {fileID: 0}
@@ -654,15 +659,21 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1727662504724418639}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &8679641506438797806 stripped
+--- !u!4 &8679641506438797802 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8038261308700297633, guid: b13f341511af56443beddd8cdebc8104,
+  m_CorrespondingSourceObject: {fileID: 8038261308700297637, guid: b13f341511af56443beddd8cdebc8104,
     type: 3}
   m_PrefabInstance: {fileID: 1727662504724418639}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &8679641506438797804 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8038261308700297635, guid: b13f341511af56443beddd8cdebc8104,
+    type: 3}
+  m_PrefabInstance: {fileID: 1727662504724418639}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8679641506438797806 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8038261308700297633, guid: b13f341511af56443beddd8cdebc8104,
     type: 3}
   m_PrefabInstance: {fileID: 1727662504724418639}
   m_PrefabAsset: {fileID: 0}
