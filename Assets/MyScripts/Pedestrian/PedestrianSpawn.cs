@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TurnTheGameOn.SimpleTrafficSystem;
 using Unity.VisualScripting;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class PedestrianSpawn : MonoBehaviour
 {
@@ -11,6 +13,8 @@ public class PedestrianSpawn : MonoBehaviour
     public List<GameObject> PedestrianPrebafs = new List<GameObject>();
 
     public List<GameObject> waypointsList = new List<GameObject>();
+
+    public List<GameObject> spawned = new List<GameObject>();
 
     public int maxPedestrian;
 
@@ -23,6 +27,7 @@ public class PedestrianSpawn : MonoBehaviour
     private int i;
 
     public int spawnPointIndex;
+    public AITrafficLightManager trafficLightManager;
     
     // Start is called before the first frame update
     void Start()
@@ -38,22 +43,34 @@ public class PedestrianSpawn : MonoBehaviour
     void FixedUpdate()
     {
         _timer = timer.timerCount;
-        if (currentPedestrian != maxPedestrian && Math.Abs(_timer - (10f * (i + 1))) < 0.1)
+        if (currentPedestrian != maxPedestrian && Math.Abs(_timer - (5f * (i + 1))) < 0.1)
         {
-            SpawnPedestrian();
+            spawnPointIndex = Random.Range(0, 2);
+            SpawnPedestrian(spawnPointIndex);
             currentPedestrian++;
             i++;
         }
+
+        for (int j = 0; j < spawned.Count; j++)
+        {
+            if (spawned[j] == null)
+            {
+                spawned.RemoveAt(j);
+                currentPedestrian--;
+            }
+        }
     }
 
-    private void SpawnPedestrian()
+    private void SpawnPedestrian(int index)
     {
-        var person = Instantiate<GameObject>(PedestrianPrebafs[spawnPointIndex], spawnPoints[spawnPointIndex].transform.position, Quaternion.identity);
+        var person = Instantiate<GameObject>(PedestrianPrebafs[0], spawnPoints[index].transform.position, Quaternion.identity);
+        spawned.Add(person);
         var person_scrpit = person.GetComponent<PedestrianAI>();
         person_scrpit.spawn = this;
-        for (int i = 0; i < waypointsList[spawnPointIndex].transform.childCount; i++)
+        person_scrpit.trafficLight = trafficLightManager;
+        for (int i = 0; i < waypointsList[index].transform.childCount; i++)
         {
-            person_scrpit.waypoints[i] = waypointsList[spawnPointIndex].transform.GetChild(i).transform;
+            person_scrpit.waypoints[i] = waypointsList[index].transform.GetChild(i).transform;
         }
     }
 }

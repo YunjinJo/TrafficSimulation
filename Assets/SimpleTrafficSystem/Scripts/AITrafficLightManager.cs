@@ -8,9 +8,9 @@
         [Tooltip("Array of AITrafficLightCycles played as a looped sequence.")]
         public AITrafficLightCycle[] trafficLightCycles;
         private float timer;
-        private enum CycleState { Green, Red, Yellow, Complete }
-        private CycleState lightState;
-        private int cycleIndex;
+        public enum CycleState { Green, Red, Yellow, Complete }
+        public CycleState lightState;
+        public int cycleIndex;
 
         private void Start()
         {
