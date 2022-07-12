@@ -98,4 +98,10 @@ public class TrafficLightsControl : MonoBehaviour
 
 
         }
+
+        public void Emergency(int index)
+        {
+            if(lightState == CycleState.Complete)
+                cycleIndex = index;
+        }
 }

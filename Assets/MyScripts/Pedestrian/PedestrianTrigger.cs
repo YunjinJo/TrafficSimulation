@@ -19,8 +19,8 @@ public class PedestrianTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((trafficLightManager.cycleIndex == 0 &&
-             trafficLightManager.lightState == AITrafficLightManager.CycleState.Red) || trafficLightManager.cycleIndex != 0 && pedestrianList.Count > 0)
+        if ((trafficLightManager.cycleIndex == 3 &&
+             trafficLightManager.lightState == AITrafficLightManager.CycleState.Red) || trafficLightManager.cycleIndex != 3 && pedestrianList.Count > 0)
         {
             for (int i = 0; i < pedestrianList.Count; i++)
             {

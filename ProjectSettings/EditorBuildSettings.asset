@@ -8,7 +8,13 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Demo_NoAI.unity
     guid: 0aa12045585cb3e468741b06f55c44f4
+  - enabled: 1
+    path: Assets/Scenes/Demo_NoAI 1.unity
+    guid: 5935107ef0c3e6643a5aec409d10240d
+  - enabled: 1
+    path: Assets/Scenes/Demo_AI 1.unity
+    guid: d4f86861d89d44b70b744bec23092ab9
   m_configObjects: {}

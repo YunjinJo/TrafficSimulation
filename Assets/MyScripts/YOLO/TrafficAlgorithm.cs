@@ -40,7 +40,8 @@ public class TrafficAlgorithm : MonoBehaviour
         }
         else if (trafficLightManager.cycleIndex == 3 || trafficLightManager.lightState == TrafficLightsControl.CycleState.Red || trafficLightManager.lightState == TrafficLightsControl.CycleState.Yellow)
         {
-            internaltimer += 1.0f;
+            //SpecialCarDetect();
+            test_deltaTime_current = 1.0f;
         }
         else
         {
@@ -107,6 +108,18 @@ public class TrafficAlgorithm : MonoBehaviour
         {
             index++;
         }
+    }
+
+    public void SpecialCarDetect()
+    {
+        for (int i = 0; i < yolos.Count; i++)
+        {
+            var special_car = yolos[i].GetSpecialCarData();
+            if(special_car > 0)
+                trafficLightManager.Emergency(i);
+            
+        }
+        
     }
 
     

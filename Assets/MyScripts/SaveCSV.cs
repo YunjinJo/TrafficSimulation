@@ -58,6 +58,24 @@ public class SaveCSV : MonoBehaviour
         //writer.WriteLine(strData);
         writer.Close();
     }
+    
+    public void WriteData_AI(List<int> strData)
+    {
+        // FileMode.Create는 덮어쓰기.
+        FileStream f = new FileStream(Application.dataPath + "/StreamingAssets" + "/" + "result_AI.csv", FileMode.Create, FileAccess.Write);
+ 
+        StreamWriter writer = new StreamWriter(f, System.Text.Encoding.Unicode);
+        writer.WriteLine("Time,CarCount");
+        var temp = 1;
+        foreach (var i in strData)
+        {
+            writer.WriteLine(60*temp + "," + i);
+            Debug.Log("Data Saved" + i);
+            temp++;
+        }
+        //writer.WriteLine(strData);
+        writer.Close();
+    }
  
     
     // public void ReadData()

@@ -2,7 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CarCountRecord : MonoBehaviour
 {
@@ -31,16 +33,27 @@ public class CarCountRecord : MonoBehaviour
         if (Math.Abs(countTriggerManager.timerCount - (60f * (i+1))) < 0.5)
         {
             carCountList.Add(countTriggerManager.carCount);
-            texts += (carCountList[i] + ", ");
+            texts = (carCountList[i].ToString());
             
 
-            textMeshPro.text = "1Minute: " + texts;
+            textMeshPro.text = "Record: " + texts;
             i++;
         }
     }
 
     public void SaveData()
     {
-        saveCsv.WriteData(carCountList);
+        var scene = SceneManager.GetActiveScene().name;
+        if (scene == "Demo_AI 1")
+        {
+            saveCsv.WriteData_AI(carCountList);
+        }
+            
+        else
+        {
+            saveCsv.WriteData(carCountList);
+        }
+        
     }
+    
 }
