@@ -25,7 +25,11 @@ YOLOv5를 이용한 사물 감지는 https://github.com/YunjinJo/yolov5_car_coun
 ### 1. 신호등 동작 ✅
 <details>
 <summary>신호등 동작</summary>
-<div markdown="1">
+
+<details>
+<summary>구버전</summary>
+<div>
+
 
 <img src = "https://github.com/YunjinJo/TrafficSimulation/blob/master/README_files/plan1_1.png?raw=true" width="45%">   
 <img src = "https://github.com/YunjinJo/TrafficSimulation/blob/master/README_files/plan1_2.png?raw=true" width="45%">   
@@ -34,11 +38,21 @@ YOLOv5를 이용한 사물 감지는 https://github.com/YunjinJo/yolov5_car_coun
 </div>
 </details>
 
+<details>
+<summary>신버전</summary>
+<div>
+이미지 추가
+</div>
+</details>
+</details>
 
 
 ### 2. 신호등 신호에 맞추어 차량 이동 ✅  
 <details>
-<summary>신호등 동작</summary>
+<summary>차량 이동</summary>
+
+<details>
+<summary>구버전</summary>
 <div>
 
 <img src = "https://github.com/YunjinJo/TrafficSimulation/blob/master/README_files/Plan2_gif.gif?raw=true">
@@ -48,6 +62,16 @@ YOLOv5를 이용한 사물 감지는 https://github.com/YunjinJo/yolov5_car_coun
 ↑클릭시 유튜브로 이동  
 신호등의 신호에 따라 차량이 멈추고, 움직이는 것을 확인
 </div>
+</details>
+
+<details>
+<summary>신버전</summary>
+<div>
+이미지 추가
+</div>
+</details>
+
+
 </details>
 
 ### 3. 2차로보다 더 큰 도로 만들기 
@@ -77,6 +101,7 @@ Releases에서 자신의 OS에 맞는 파일을 다운로드 후 실행시켜주
 ## 4. 버전
 - v0.2: 차량 AI, 신호등 동작 확인
 - v0.3: 차량 AI, 신호등 연동, 2차선 도로 제작
+- v0.4: SimpleTrafficSimulation 에셋 추가
 
 
 ## 5. 참고 자료
