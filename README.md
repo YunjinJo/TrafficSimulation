@@ -76,6 +76,7 @@ Releases에서 자신의 OS에 맞는 파일을 다운로드 후 실행시켜주
 
 ## 4. 버전
 - v0.2: 차량 AI, 신호등 동작 확인
+- v0.3: 차량 AI, 신호등 연동, 2차선 도로 제작
 
 ## 5. 참고 자료
 Simple City Builder: https://www.youtube.com/playlist?list=PLcRSafycjWFd6YOvRE3GQqURFpIxZpErI   
