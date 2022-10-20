@@ -14,6 +14,12 @@ YOLOv5를 이용한 사물 감지는 https://github.com/YunjinJo/yolov5_car_coun
 <img src="https://img.shields.io/badge/C Sharp-239120?style=for-the-badge&logo=C Sharp&logoColor=white">  
 <img src="https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=Unity&logoColor=white">
 
+### 구현 결과
+<img src="https://github.com/YunjinJo/TrafficSimulation/blob/master/README_files/Result_thumnail.png?raw=true">
+<a href="https://www.youtube.com/watch?v=Z5d_juwLt5g">유튜브 링크</a>
+
+
+
 ## 1. 설명
 ![UnityProject](https://github.com/YunjinJo/TrafficSimulation/blob/master/README_files/UnityProject.png?raw=true)
 1. 차량이 도로를 따라 움직이는 AI를 구현합니다.
@@ -41,7 +47,7 @@ YOLOv5를 이용한 사물 감지는 https://github.com/YunjinJo/yolov5_car_coun
 <details>
 <summary>신버전</summary>
 <div>
-이미지 추가
+<img src = "https://github.com/YunjinJo/TrafficSimulation/blob/master/README_files/TrafficLights_Image.png?raw=true" width="45%">   
 </div>
 </details>
 </details>
@@ -67,7 +73,7 @@ YOLOv5를 이용한 사물 감지는 https://github.com/YunjinJo/yolov5_car_coun
 <details>
 <summary>신버전</summary>
 <div>
-이미지 추가
+<img src = "https://github.com/YunjinJo/TrafficSimulation/blob/master/README_files/TrafficLights%20demo.gif?raw=true">
 </div>
 </details>
 
