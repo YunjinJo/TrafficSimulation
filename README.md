@@ -88,17 +88,38 @@ YOLOv5를 이용한 사물 감지는 https://github.com/YunjinJo/yolov5_car_coun
 
 ### 4. 보행자 구현
 1. 보행자 모델링 구하기
-2. 보행자 AI 구현
-3. 보행자 신호등 구현
-4. 보행자 횡단보도 구현
-5. 보행자와 차량간 AI 연동
+   <img src = "https://github.com/YunjinJo/TrafficSimulation/blob/master/README_files/Human%20Modeling.png?raw=true">
+   무료 사람 모델링 사용
 
-### 5. 실제 지도 데이터 구현
+2. 보행자 AI 구현
+   <img src = "https://github.com/YunjinJo/TrafficSimulation/blob/master/README_files/Ped_Waypoint.png?raw=true">
+   빨간색 Point로 보행자가 이동할 수 있는 장소를 미리 지정  
+   신호등을 건너야 하는 경우 보행자 신호등에 따라 멈춤 or 이동  
+   도착 지점은 사람이 스폰될 때 랜덤으로 지정됨, 최단 거리로 이동
+3. 보행자 신호등 구현
+  <img src = "https://github.com/YunjinJo/TrafficSimulation/blob/master/README_files/Ped_Lights.png?raw=true">
+  차량용 신호등을 그대로 사용, 단 노란불은 작동하지 않음
+
+### 5. 실제 지도 데이터 구현 -> 중단
 1. 한국공학대학교 주변 도로 및 건물 구현
 2. 보행자와 차량 자동 생성 및 이동 확인
 
 ### 6. 시뮬레이션 기능 추가
-1. 특정 지역의 차량 대수, 차량 통행량 등 정보 시각화
+1. 차량 통행량 등 정보 시각화
+   <img src = "https://github.com/YunjinJo/TrafficSimulation/blob/master/README_files/UI.png?raw=true">
+   Timer : 시뮬레이션 작동 시간  
+   CarCount : 신호등을 지나간 차량의 대수  
+   Record : 60초마다 저장된 CarCount 값  
+   Select TrafficLight : 각각의 신호등 동작 시간 변경  
+   Save : Record 된 값들 CSV 파일로 저장  
+   X2.5 : 버튼을 누르면 X0 (정지), X1 (1배속), X2.5 (2.5배속) 시뮬레이션 시간 조절  
+   No AI : AI 기능이 없는 신호등 씬으로 변경  
+   Exit : 프로그램 종료  
+
+2. 데이터 저장  
+   <img src = "https://github.com/YunjinJo/TrafficSimulation/blob/master/README_files/CSV%20Data.png?raw=true" width = "40%">  
+   60초마다 저장된 데이터를 CSV 파일로 저장, 엑셀과 같은 프로그램으로 불러올 수 있음
+ 
 
 
 ## 3. 프로젝트 설치 방법
@@ -108,6 +129,12 @@ Releases에서 자신의 OS에 맞는 파일을 다운로드 후 실행시켜주
 - v0.2: 차량 AI, 신호등 동작 확인
 - v0.3: 차량 AI, 신호등 연동, 2차선 도로 제작
 - v0.4: SimpleTrafficSimulation 에셋 추가
+- v0.5: 신호등 시뮬레이션 추가
+- v0.6: 보행자 시뮬레이션 추가
+- v0.7: UI 완성
+- v0.8: 데이터 저장 기능 완성
+- v1.0: 필수 기능 95% 완성
+  (note: 씬 변환시 타이머 버그 있음)
 
 
 ## 5. 참고 자료
